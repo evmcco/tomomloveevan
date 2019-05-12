@@ -1,0 +1,102 @@
+    /* 
+pink: rgb(255,210,214) 
+orange: rgb(255,211,142)
+teal: rgb(144, 228, 205)
+blue: rgb(132,220,224)
+fuschia: rgb(253, 101, 175)
+font-family: 'Homemade Apple', cursive;
+font-family: 'Fredericka the Great', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding 0;
+}
+
+html {
+    background-color: rgb(255,210,214);
+}
+
+canvas { 
+    display: block;
+}
+
+h1 {
+    color: rgb(30, 30, 30);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.5rem;
+    margin: 4% auto;
+    text-align: center;
+}
+
+.orange {
+    background-color: rgb(255,211,142);
+    height: 50vh;
+    left: 15vw;
+    top: 15vh;
+    width: 70vw;
+    z-index: 0;
+}
+
+.blue {
+    background-color: rgb(132, 220, 224);
+    height: 45vh;
+    left: 17.5vw;
+    top: 17.5vh;
+    width: 65vw;
+    z-index: 5;
+}
+
+.fuschia {
+    background-color: rgb(253, 101, 175);
+    height: 55vh;
+    left: 12.5vw;
+    top: 12.5vh;
+    width: 75vw;
+    z-index: -5;
+}
+
+.content {
+    background-color: white;
+    border-color: rgb(132, 220, 224);
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    height: 40vh;
+    left: 20vw;
+    top: 20vh;
+    width: 60vw;
+    z-index: 10;
+}
+
+.box {
+    position: absolute;
+}
+
+.confetti--button {
+    background-color: rgb(132,220,224);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+    position: absolute;
+    left: 30%;
+    margin: 0 auto;
+    text-align: center;
+    top: 80%;
+    width: 40%;
+}
+
+.slide-in-left {
+	animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
